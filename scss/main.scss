@@ -1,0 +1,21 @@
+@import './utils/fonts';
+@import './utils/variables';
+
+@import './base';
+
+@import './utils/utilts';
+
+@import './components/logo';
+@import './components/social-icons';
+@import './components/nav-links';
+@import './components/button';
+
+@import './layouts/header';
+@import './layouts/mobile-menu';
+@import './layouts/hero-section';
+@import './layouts/about-section';
+@import './layouts/advantages-section';
+@import './layouts/procedures-section';
+@import './layouts/contact-section';
+@import './layouts/footer';
+@import './layouts/modal-contact';

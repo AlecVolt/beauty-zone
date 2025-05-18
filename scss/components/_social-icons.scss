@@ -1,0 +1,15 @@
+.social-icons {
+    width: 32px;
+    height: 32px;
+    fill: var(--color-brand-dark);
+    transition: fill .3s;
+
+    &:hover {
+        fill: var(--color-brand-light);
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+        width: 42px;
+        height: 42px;
+    }
+}

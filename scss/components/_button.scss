@@ -1,0 +1,16 @@
+.button {
+    cursor: pointer;
+    border: none;
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-light);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+        font-size: 18px;
+        padding: 16px 32px;
+        border-radius: 32px;
+    }
+}
