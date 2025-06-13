@@ -11,6 +11,7 @@
   cursor: pointer;
   fill: var(--color-primary-dark);
   flex-shrink: 0;
+  transition: background-color .3s, fill .3s;
 
   &:hover {
     background-color: var(--color-brand-dark);

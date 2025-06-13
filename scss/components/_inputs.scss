@@ -1,0 +1,29 @@
+.input {
+    &__control {
+        width: 100%;
+        color: var(--color-primary-light);
+        padding: 16px 24px;
+        background-color: transparent;
+        border: 2px solid var(--color-secondary-light);
+        font-size: 13px;
+        border-radius: 24px;
+        margin-bottom: 16px;
+        transition: background-color .3s;
+
+        @media screen and (min-width: $bp-tablet) {
+            padding: 18px 32px;
+            border-radius: 32px;
+        }
+
+        &::placeholder {
+            color: var(--color-primary-light);
+            font-size: 13px;
+            line-height: 1.17;
+        }
+
+        &:focus {
+            background-color: var(--color-secondary-light);
+            outline: none;
+        }
+    }
+}

@@ -68,6 +68,13 @@
     }
 
     &__button {
+        margin: 0 auto 8px;
+        transition: background-color .3s, color .3s;
+
+        &:hover {
+            color: var(--color-brand-dark);
+        }
+
         @media screen and (min-width: $bp-tablet) {
             margin-bottom: 16px;
         }
