@@ -95,7 +95,7 @@
                     <p class="hero-section__subtitle">Косметологічна клініка</p>
                     <h1 class="hero-section__title">Beauty Zone</h1>
                     <div class="hero-section__button-container">
-                        <button class="hero-section__button button" type="button">Замовити дзвінок</button>
+                        <button class="hero-section__button button modal-btn-open" type="button">Замовити дзвінок</button>
                         <p class="hero-section__text">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
                     </div>
                 </div>
@@ -233,7 +233,7 @@
                                 id="user-name" placeholder="Ваше ім'я та прізвище">
                             </div>
                             <div class="contact-section__form-field input">
-                                <label class="input__label visually-hidden" for="user-tel">Ваш номер телфону</label>
+                                <label class="input__label visually-hidden" for="user-tel">Ваш номер телефону</label>
                                 <input class="input__control" type="tel" name="user-tel"
                                 id="user-name" placeholder="Ваш номер телфону">
                             </div>
@@ -288,6 +288,40 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <button class="modal__close-btn modal-btn-close" type="button">
+                        <svg width="16px" height="16px">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+            </button>
+            <h2 class="modal__title section-title section-title--centered">Замовити дзвінок</h2>
+            <h3 class="modal__form-title">Запишіться <span class="text-brand">безкоштовно</span> та отримайте подарунок</h3>
+                <form name="modal-contact-form" autocomplete="off" novalidate>
+                    <div class="modal__form-field input">
+                        <label class="input__label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+                        <input class="modal__input-control input__control" type="text" name="user-name"
+                        id="user-name" placeholder="Ваше ім'я та прізвище">
+                    </div>
+                    <div class="modal__form-field input">
+                        <label class="input__label visually-hidden" for="user-tel">Ваш номер телефону</label>
+                        <input class="modal__input-control input__control" type="tel" name="user-tel"
+                        id="user-name" placeholder="Ваш номер телфону">
+                    </div>
+                    <div class="modal__form-field input">
+                        <label class="input__label visually-hidden" for="user-email">Ваша електронна пошта</label>
+                        <input class="modal__input-control input__control" type="email" name="user-email"
+                        id="user-name" placeholder="Ваша електронна пошта">
+                    </div>
+                    <button class="modal__button button" type="button">Записатись безкоштовно</button>
+                    <p class="modal__policy-agree policy-agree">
+                        Натискаючи на кнопку я погоджуюсь <a class="policy-agree__link" href="#">з політикою конфіденційності</a>
+                    </p>
+                    
+                </form>
+        </div>
+    </div>
 
     <script src="./js/mobile-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

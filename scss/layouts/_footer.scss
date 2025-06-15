@@ -1,10 +1,22 @@
 .footer {
+    position: relative;
     background-color: var(--color-brand-dark);
     padding: 32px 0;
 
     @media screen and (min-width: $bp-tablet) {
         padding: 56px 0;
         font-size: 16px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../../images/footer-decor.png);
+        background-repeat: no-repeat;
+        width: 247px;
+        height: 152px;
+        bottom: 0;
+        right: 0;
     }
 
     &__container {
@@ -26,6 +38,7 @@
 
         @media screen and (min-width: $bp-tablet) {
             flex-direction: row;
+            align-items: flex-start;
             gap: 32px;
             text-align: left;
             flex-basis: 50%;
@@ -35,7 +48,7 @@
     &__logo,
     &__menu,
     &__address-contacts,
-    &__address-list {
+    &__address-info {
         flex-basis: 50%;
     }
 

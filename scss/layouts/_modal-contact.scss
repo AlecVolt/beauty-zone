@@ -1,0 +1,62 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(1, 31, 74, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: opacity .3s, visibility .3s;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+    position: relative;
+    background-color: var(--color-brand-dark);
+    padding: 42px 206px;
+    border-radius: 48px;
+    height: 100%;
+    max-height: 764px;
+    width: 100%;
+    max-width: 724px;
+
+    &__close-btn {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        fill: transparent;
+        stroke: var(--color-primary-light);
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__title {
+        color: var(--color-primary-light);
+        margin-bottom: 40px;
+    }
+
+    &__form-title {
+        color: var(--color-primary-light);
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 32px;
+        max-width: 280px;
+    }
+
+    &__input-control {
+        margin-bottom: 24px;
+    }
+}
